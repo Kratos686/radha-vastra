@@ -8,7 +8,6 @@
     .menu{
         display: none;
         color: red;
-        font-size: 40px;
         font-size: 30px;
         cursor: pointer;
     }
@@ -17,24 +16,44 @@
             display: block;
             z-index:1001;
         }
+        .nav-link li:last-child{
+            border-bottom: none;
+        }
+        .nav-link a{
+            color: black;
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+        }
+        nav{
+            position: relative;
+        }
+        .cards{
+            flex-direction:row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         .nav-link{
-            z-index:1000;
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top:70px;
-            right:20px;
-            background:white;
-            width: 220px;
-            padding:15px;
-            border-radius:10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+           display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top:100%;
+        right:20px;
+        background:gold;
+        width:220px;
+        padding:15px;
+        list-style:none;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,.2);
         }
         .nav-link.active{
-            display:flex;
+            display:flex !important;
         }
         .nav-link li{
             list-style: none;
+            width: 100%;
+            border-bottom: 1px solid #D4AF37;
             color: black;
         }
     }
@@ -60,11 +79,17 @@
         display: flex;
         align-items: center;
         gap: 40px;
+        list-style:none;
+        padding:0;
+        margin:0;
     }
     #krishna{
-        height: 150px;
-        width: 150px;
+        height: 70px;
+        width: 70px;
         border-radius: 200px;
+    }
+    .logo h2{
+        font-size:20px;
     }
     body{
         background-color: #FFF8E7;
@@ -267,8 +292,6 @@
     <a href="https://wa.me/918210706200?text=%20Hi,%20i%20want%20to%20order%20a%20custom%20product." target="_blank" rel="noopener noreferrer">
     <button id="made">Click here</button>
 </a>
-<script src="script.js"></script>
-    </head>
     <hr>
     <footer>
         <h2>*Quick links*</h2>
@@ -293,13 +316,6 @@
 </a>
 <p>© 2026 Krishna bless</p>
     </footer>
-    <script>
-        const menu = document.querySelector(".menu");
-        const navLink = document.querySelector(".nav-link");
-        menu.addEventListener("click", () => {
-            navLink.classList.toggle("active");
-        });
-        document.querySelector(".menu").onclick = () => alert("clicked");
-    </script>
+    <script src="script.js"></script>
     </body>
-</html>
+</html>>
