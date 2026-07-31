@@ -11,6 +11,28 @@
         font-size: 30px;
         cursor: pointer;
     }
+    .hero{
+        animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+            transform:translateY(30px);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+    @keyframes float{
+        0%,100%{
+            transform:translateY(0);
+        }
+        50%{
+            transform:translateY(10px);
+
+        }
+    }
             @media(max-width:768px){
         .menu{
             display: block;
@@ -79,6 +101,11 @@
         height: 70px;
         width: 70px;
         border-radius: 200px;
+        transition:0.5s;
+        animation:float 2s ease-in-out infinite;
+    }
+    #Krishna:hover{
+        transform:rotate(8deg) scale(1.08);
     }
      nav{
         display: flex;
@@ -92,6 +119,21 @@
         color: yellow;
         text-decoration: double;
         margin: 0.5px;
+        position: relative;
+        text-decoration:none;
+    }
+    nav a::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width:0;
+        height:2px;
+        background:white;
+        transition:0.3s;
+    }
+    nav a:hover::after{
+        width:100%;
     }
      .logo{
         display: flex;
@@ -118,11 +160,18 @@
         gap: 30px;
     }
     .card{
+        opacity:0;
+        transform:translateY(50px);
+        transition:1s;
         width: 250px;
         padding: 20px;
         background: #FF9933;
         border-radius: 30px;
         box-shadow: 0 5px 15px rgba(0,0,0,1);
+    }
+    .card.show{
+        opacity:1;
+        transform:translateY(0);
     }
     .cards:hover{
         transform: scale(1.05);
@@ -169,6 +218,10 @@
     .fa-youtube:hover{
         transform:scale(1.2);
     }
+    html{
+        scroll-behavior:smooth;
+    }
+
         </style>
     </head>
     <body>
@@ -249,5 +302,16 @@
 <p>© 2026 Krishna Vastra</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+        if(card.getBoundingClientRect().top < window.innerHeight - 100){
+            card.classList.add("show");
+        }
+    });
+});
+    </script>
     </body>
 </html>

@@ -11,6 +11,27 @@
         font-size: 30px;
         cursor: pointer;
     }
+    .hero{
+        animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+            transform: translateY(30px);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0)
+        }
+    }
+    @keyframes float{
+        0%,100%{
+            transform:translateY(0);
+        }
+        50%{
+            transform:translateY(10px);
+        }
+    }
     @media(max-width:768px){
         .menu{
             display: block;
@@ -70,6 +91,21 @@
         color: yellow;
         text-decoration: double;
         margin: 0.5px;
+        position: relative;
+        text-decoration: none;
+    }
+    nav a::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width:0;
+        height:2px;
+        background: white;
+        transition:0.3s
+    }
+    nav a:hover::after{
+        width:100%;
     }
     .logo{
         display: flex;
@@ -88,6 +124,11 @@
         height: 70px;
         width: 70px;
         border-radius: 200px;
+        transition:0.5s;
+        animation:float 2s ease-in-out infinite;
+    }
+    #krishna:hover{
+        transform:rotate(8deg) scale(1.08);
     }
     .logo h2{
         font-size:20px;
@@ -179,6 +220,10 @@
         transform: scale(1.05);
         transition: 1.5s;
     }
+    .card.show{
+        opacity:1;
+        transform:translateY(0);
+    }
     #dudh{
         background-color: #D4AF37;
         color: white;
@@ -194,6 +239,7 @@
         cursor: pointer;
         box-shadow: 0 5px 15px rgba(0,0,0.4);
     }
+
     #blouse:hover{
          transform: scale(1.25);
         transition: 1s;
@@ -219,6 +265,9 @@
     }
     #om{
         color: #4A2C2A;
+    }
+    html{
+        scroll-behavior: smooth;
     }
 </style>
 </head>
@@ -318,5 +367,16 @@
 <p>© 2026 Krishna bless</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+        if(card.getBoundingClientRect().top < window.innerHeight - 100){
+            card.classList.add("show");
+        }
+    });
+});
+    </script>
     </body>
 </html>
