@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            .menu{
+        display: block;
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+    }
+            @media(max-width:768px){
+        .menu{
+            display: block;
+            z-index:1001;
+        }
+        .nav-link li:last-child{
+            border-bottom: none;
+        }
+        .nav-link a{
+            color: black;
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+        }
+        nav{
+            position: relative;
+        }
+        .cards{
+            flex-direction:row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            display: flex;
+        }
+        .nav-link{
+           display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top:100%;
+        right:20px;
+        background:gold;
+        width:220px;
+        padding:15px;
+        list-style:none;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,.2);
+        }
+        .nav-link.active{
+            display:flex !important;
+        }
+        .nav-link li{
+            list-style: none;
+            width: 100%;
+            border-bottom: 1px solid #D4AF37;
+            color: black;
+        }
+    }
+            body{
+                text-align: center;
+                background-color: #FFF8E7;
+            }
+            #om{
+        color: #4A2C2A;
+    }
+     footer{
+        background-color: #FF9933;
+        color: aliceblue;
+        text-align: center;
+    }
+    footer a{
+        color: yellow;
+        text-decoration: dotted;
+        margin: 10px;
+    }
+     #Krishna{
+        height: 70px;
+        width: 70px;
+        border-radius: 200px;
+    }
+     nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #FF9933;
+        color: aliceblue;
+    }
+    nav a{
+        color: yellow;
+        text-decoration: double;
+        margin: 0.5px;
+    }
+     .logo{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+     }
+     .nav-link{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    #pork{
+        text-align: left;
+        text-decoration: dotted;
+        align-items: center;
+        display: flex;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .card{
+        width: 250px;
+        padding: 20px;
+        background: #FF9933;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,1);
+    }
+    .cards:hover{
+        transform: scale(1.05);
+        transition: 1.5s;
+    }
+    #mumma{
+        border-radius: 1000px;
+        width: 120px;
+        height: 120px;
+    }
+    #us{
+        background-color: #4A2C2A;
+        color: #D4AF37;
+    }
+    .fa-instagram{
+        font-size: 20px;
+        color: #E1306C;
+        transition: 0.3s;
+    }
+    .fa-instagram:hover{
+        transform:scale(1.2);
+    }
+    .fa-envelope{
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+    }
+    .fa-envelope:hover{
+        transform:scale(1.2);
+    }
+    .fa-whatsapp{
+        font-size: 20px;
+        color:green;
+        transition: 0.3s;
+    }
+    .fa-whatsapp:hover{
+        transform:scale(1.2);
+    }
+    .fa-youtube{
+        font-size: 20px;
+        color: red;
+        transition: 0.3s;
+    }
+    .fa-youtube:hover{
+        transform:scale(1.2);
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img id="Krishna" src="krishna.jfif" alt="laddu">
+                <h2>Krishna Vastra</h2>
+            </div>
+            <ul class="nav-link">
+                 <li><a href="index.html">Home Page</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="vision.html">Our Vision</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <section class="krish">
+            <div class="hero">
+                <h1 id="om">🌼Our Story</h1>
+                <h3 id="om">Krishna Vastra began with a simple passion for creating beautiful handmade Krishna dresses, crochet creations, and stitched products. Every item is crafted with patience, care, and devotion, ensuring quality that reflects both tradition and craftsmanship</h3>
+                <br>
+                <h3 id="om">What started as a small home-based effort is growing into a mission to bring handmade artistry to every home while supporting women with meaningful work opportunities.</h3>
+        </div>
+        </section>
+        <hr>
+        <h1 id="us">🌸Our Mission🌸</h1>
+                    <h2 id="pork">❤️Handmade with Care</h2>
+                    <h2 id="pork">🦚Inspired by Devotion</h2>
+                    <h2 id="pork">🧶Quality Craftsmanship</h2>
+                    <h2 id="pork">👩 Empowering womans</h2>
+                    <hr>
+                    <h1>Meet the founder</h1>
+                    <section class="churan">
+                        <div class="cards">
+                            <div class="card">
+                                <img id="mumma" src="mummy.jpg" alt="wo">
+                                <h2>Founder Of Krishna Vastra</h2>
+                                <h3>Name: Mrs. Bandana Mishra</h3>
+                                <h3>Age: 34 years</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <h1 id="us">🌿 Why We Are Different🌿</h1>
+                    <h2 id="pork">✔ Handmade products</h2>
+                    <h2 id="pork">✔ Custom designs</h2>
+                    <h2 id="pork">✔ Affordable pricing</h2>
+                    <h2 id="pork">✔ Traditional Craftsmanship</h2>
+                    <h2 id="pork">✔ Made with love</h2>
+                    <h2 id="pork">✔ Supporting local women</h2>
+                    <hr>
+                    <h1 id="us">💛Our Vision💛</h1>
+                    <h2 id="we">We dream of building a community where talented women can earn with dignity through their skills. Every purchase helps preserve handmade craftsmanship while creating employment opportunities for women who deserve a chance to shine.</h2>
+    </body>
+    <footer>
+        <h2>*Quick links*</h2>
+        <a href="index.html">Home Page</a>
+        <a href="products.html">Our Products</a>
+        <a href="vision.html">Our Vision</a>
+        <a href="contact.html">Contact us</a>
+        <br>
+        <br>
+        <h2>*Also find us on these platforms*</h2>
+        <a href="https://instagram.com" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+<a href="mailto:abhinavmishra7690@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+<a href="https://wa.me/918210706200?text=%20Hi%20i%20want%20to%20order%20your%20product." target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="https://youtube.com" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+</a>
+<p>© 2026 Krishna Vastra</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
