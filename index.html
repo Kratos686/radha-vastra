@@ -2,20 +2,42 @@
 <html>
     <head>
         <title>business</title>
-        <nav>
-            <div class="logo">
-                <img id="krishna" src="krishna.jfif" alt="laddu">
-                <h2>Krishna bless</h2>
-            </div>
-            <div class="nav-link">
-                <a href="about.html">About us</a>
-                <a href="products.html">Our Products</a>
-                <a href="vision.html">Our Vision</a>
-                <a href="contact.html">Contact us</a>
-            </div>
-        </nav>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
+    .menu{
+        display: none;
+        color: red;
+        font-size: 40px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    @media(max-width:768px){
+        .menu{
+            display: block;
+            z-index:1001;
+        }
+        .nav-link{
+            z-index:1000;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top:70px;
+            right:20px;
+            background:white;
+            width: 220px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .nav-link.active{
+            display:flex;
+        }
+        .nav-link li{
+            list-style: none;
+            color: black;
+        }
+    }
     nav{
         display: flex;
         justify-content: space-between;
@@ -173,7 +195,23 @@
         color: #4A2C2A;
     }
 </style>
+</head>
 <body>
+    <nav>
+            <div class="logo">
+                <img id="krishna" src="krishna.jfif" alt="laddu">
+                <h2>Krishna bless</h2>
+            </div>
+            <ul class="nav-link">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="vision.html">Our Vision</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     <section class="krish">
         <div class="hero">
             <h1 id="om">Handmade Krishna Dresses and Crochet Creations</h1>
@@ -229,7 +267,7 @@
     <a href="https://wa.me/918210706200?text=%20Hi,%20i%20want%20to%20order%20a%20custom%20product." target="_blank" rel="noopener noreferrer">
     <button id="made">Click here</button>
 </a>
-</body>
+<script src="script.js"></script>
     </head>
     <hr>
     <footer>
@@ -255,4 +293,13 @@
 </a>
 <p>© 2026 Krishna bless</p>
     </footer>
+    <script>
+        const menu = document.querySelector(".menu");
+        const navLink = document.querySelector(".nav-link");
+        menu.addEventListener("click", () => {
+            navLink.classList.toggle("active");
+        });
+        document.querySelector(".menu").onclick = () => alert("clicked");
+    </script>
+    </body>
 </html>
