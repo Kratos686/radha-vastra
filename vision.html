@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Us</title>
+        <title>Our Vision</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <style>
-            .menu{
+             .menu{
         display: block;
         color: red;
         font-size: 30px;
@@ -50,12 +50,6 @@
         nav{
             position: relative;
         }
-        .cards{
-            flex-direction:row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            display: flex;
         }
         .nav-link{
            display: none !important;
@@ -79,15 +73,46 @@
             border-bottom: 1px solid #D4AF37;
             color: black;
         }
-    }
             body{
-                text-align: center;
                 background-color: #FFF8E7;
+                text-align: center;
             }
-            #om{
-        color: #4A2C2A;
+            .fa-instagram{
+        font-size: 20px;
+        color: #E1306C;
+        transition: 0.3s;
     }
-     footer{
+    .fa-instagram:hover{
+        transform:scale(1.2);
+    }
+    .fa-envelope{
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+    }
+    .fa-envelope:hover{
+        transform:scale(1.2);
+    }
+    .fa-whatsapp{
+        font-size: 20px;
+        color:green;
+        transition: 0.3s;
+    }
+    .fa-whatsapp:hover{
+        transform:scale(1.2);
+    }
+    .fa-youtube{
+        font-size: 20px;
+        color: red;
+        transition: 0.3s;
+    }
+    .fa-youtube:hover{
+        transform:scale(1.2);
+    }
+    html{
+        scroll-behavior:smooth;
+    }
+    footer{
         background-color: #FF9933;
         color: aliceblue;
         text-align: center;
@@ -97,14 +122,14 @@
         text-decoration: dotted;
         margin: 10px;
     }
-     #Krishna{
+    #Krishna{
         height: 70px;
         width: 70px;
         border-radius: 200px;
         transition:0.5s;
         animation:float 2s ease-in-out infinite;
     }
-    #Krishna:hover{
+        #Krishna:hover{
         transform:rotate(8deg) scale(1.08);
     }
      nav{
@@ -147,134 +172,66 @@
         list-style:none;
         padding:0;
         margin:0;
-    }
-    #pork{
+     }
+     #acchi{
         text-align: left;
-        text-decoration: dotted;
-        align-items: center;
-        display: flex;
-    }
-    .cards{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-    .card{
-        opacity:0;
-        transform:translateY(50px);
-        transition:1s;
-        width: 250px;
-        padding: 20px;
-        background: #FF9933;
-        border-radius: 30px;
-         box-shadow: 0 5px 15px rgba(0,0,0,1);
-    }
-    .card.show{
-        opacity:1;
-        transform:translateY(0);
-    }
-    #mumma{
-        border-radius: 1000px;
-        width: 120px;
-        height: 120px;
-    }
-    #us{
-        background-color: #4A2C2A;
-        color: #D4AF37;
-    }
-    .fa-instagram{
-        font-size: 20px;
-        color: #E1306C;
-        transition: 0.3s;
-    }
-    .fa-instagram:hover{
-        transform:scale(1.2);
-    }
-    .fa-envelope{
-        font-size: 20px;
-        color: white;
-        transition: 0.3s;
-    }
-    .fa-envelope:hover{
-        transform:scale(1.2);
-    }
-    .fa-whatsapp{
-        font-size: 20px;
-        color:green;
-        transition: 0.3s;
-    }
-    .fa-whatsapp:hover{
-        transform:scale(1.2);
-    }
-    .fa-youtube{
-        font-size: 20px;
-        color: red;
-        transition: 0.3s;
-    }
-    .fa-youtube:hover{
-        transform:scale(1.2);
-    }
-    html{
-        scroll-behavior:smooth;
-    }
-
+        color: brown;
+        background-color: silver;
+     }
+     #kucchi{
+        color: brown;
+     }
+     #wo{
+        color: brown;
+        text-align: center;
+        background-color: #D4AF37;
+     }
         </style>
     </head>
-    <body>
-        <nav>
+        <body>
+            <nav>
             <div class="logo">
                 <img id="Krishna" src="krishna.jfif" alt="laddu">
                 <h2>Krishna Vastra</h2>
             </div>
             <ul class="nav-link">
                  <li><a href="index.html">Home Page</a></li>
+                 <li><a href="About.html">About Us</a></li>
                 <li><a href="products.html">Our Products</a></li>
-                <li><a href="vision.html">Our Vision</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
             <div class="menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-        <section class="krish">
-            <div class="hero">
-                <h1 id="om">🌼Our Story</h1>
-                <h3 id="om">Krishna Vastra began with a simple passion for creating beautiful handmade Krishna dresses, crochet creations, and stitched products. Every item is crafted with patience, care, and devotion, ensuring quality that reflects both tradition and craftsmanship</h3>
-                <br>
-                <h3 id="om">What started as a small home-based effort is growing into a mission to bring handmade artistry to every home while supporting women with meaningful work opportunities.</h3>
-        </div>
-        </section>
+        <h1 id="bucchi">🌼 Our Vision</h1>
         <hr>
-        <h1 id="us">🌸Our Mission🌸</h1>
-                    <h2 id="pork">❤️Handmade with Care</h2>
-                    <h2 id="pork">🦚Inspired by Devotion</h2>
-                    <h2 id="pork">🧶Quality Craftsmanship</h2>
-                    <h2 id="pork">👩 Empowering womans</h2>
-                    <hr>
-                    <h1>Meet the founder</h1>
-                    <section class="churan">
-                        <div class="cards">
-                            <div class="card">
-                                <img id="mumma" src="mummy.jpg" alt="wo">
-                                <h2>Founder Of Krishna Vastra</h2>
-                                <h3>Name: Mrs. Bandana Mishra</h3>
-                                <h3>Age: 34 years</h3>
-                            </div>
-                        </div>
-                    </section>
-                    <hr>
-                    <h1 id="us">🌿 Why We Are Different🌿</h1>
-                    <h2 id="pork">✔ Handmade products</h2>
-                    <h2 id="pork">✔ Custom designs</h2>
-                    <h2 id="pork">✔ Affordable pricing</h2>
-                    <h2 id="pork">✔ Traditional Craftsmanship</h2>
-                    <h2 id="pork">✔ Made with love</h2>
-                    <h2 id="pork">✔ Supporting local women</h2>
-                    <hr>
-                    <h1 id="us">💛Our Vision💛</h1>
-                    <h2 id="we">We dream of building a community where talented women can earn with dignity through their skills. Every purchase helps preserve handmade craftsmanship while creating employment opportunities for women who deserve a chance to shine.</h2>
-    </body>
-    <footer>
+        <h2 id="acchi">A Dream Beyond Handmade Products:</h2>
+        <br>
+        <h3 id="kucchi">At Krishna Bless, we dream of creating more than beautiful handmade products. We want to build a community where creativity, craftsmanship, and tradition come together to make a positive difference.</h3>
+        <hr>
+        <h2 id="acchi">👩 Empowering Women:</h2>
+        <br>
+        <h3 id="kucchi">Our vision is to provide meaningful opportunities for women to earn through their skills in sewing, crochet, and handmade crafts. We believe every talented woman deserves a chance to become financially independent.</h3>
+        <hr>
+        <h2 id="acchi">🦚 Preserving Handmade Art:</h2>
+        <br>
+        <h3 id="kucchi">In a world of mass production, we want to keep the beauty of handmade creations alive. Every stitch, every thread, and every design reflects patience, devotion, and love.</h3>
+        <hr>
+        <h2 id="acchi">🌍 Looking Towards the Future:</h2>
+        <br>
+        <h3 id="kucchi">We aspire to reach homes across India with products that bring joy, tradition, and quality. As we grow, we hope to inspire more artisans, support more families, and become a trusted name in handmade craftsmanship.</h3>
+        <hr>
+        <h2 id="acchi">💛 Our Promise:</h2>
+        <br>
+        <h3 id="wo">✔ Handmade with Care</h3>
+        <h3 id="wo">✔ Crafted with Devotion</h3>
+        <h3 id="wo">✔ Quality Over Quantity</h3>
+        <h3 id="wo">✔ Empowering Women</h3>
+        <h3 id="wo">✔ Growing Together</h3>
+        <hr>
+        </body>
+        <footer>
         <h2>*Quick links*</h2>
         <a href="index.html">Home Page</a>
         <a href="products.html">Our Products</a>
@@ -309,5 +266,4 @@ window.addEventListener("scroll", () => {
     });
 });
     </script>
-    </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>business</title>
+        <title>Products</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<style>
-    .menu{
-        display: none;
+        <style>
+             .menu{
+        display: block;
         color: red;
         font-size: 30px;
         cursor: pointer;
@@ -17,11 +17,11 @@
     @keyframes fadeIn{
         from{
             opacity:0;
-            transform: translateY(30px);
+            transform:translateY(30px);
         }
         to{
             opacity:1;
-            transform:translateY(0)
+            transform:translateY(0);
         }
     }
     @keyframes float{
@@ -30,9 +30,10 @@
         }
         50%{
             transform:translateY(10px);
+
         }
     }
-    @media(max-width:768px){
+            @media(max-width:768px){
         .menu{
             display: block;
             z-index:1001;
@@ -48,13 +49,6 @@
         }
         nav{
             position: relative;
-        }
-        .cards{
-            flex-direction:row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            display: flex;
         }
         .nav-link{
            display: none !important;
@@ -78,6 +72,20 @@
             border-bottom: 1px solid #D4AF37;
             color: black;
         }
+    }
+    body{
+                text-align: center;
+                background-color: white;
+            }
+             #krishna{
+        height: 70px;
+        width: 70px;
+        border-radius: 200px;
+        transition:0.5s;
+        animation:float 2s ease-in-out infinite;
+    }
+    #Krishna:hover{
+        transform:rotate(8deg) scale(1.08);
     }
     nav{
         display: flex;
@@ -120,22 +128,23 @@
         padding:0;
         margin:0;
     }
-    #krishna{
+     .logo{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .logo h2{
+        font-size:20px;
+    }
+     #Krishna:hover{
+        transform:rotate(8deg) scale(1.08);
+    }
+    #Krishna{
         height: 70px;
         width: 70px;
         border-radius: 200px;
         transition:0.5s;
         animation:float 2s ease-in-out infinite;
-    }
-    #krishna:hover{
-        transform:rotate(8deg) scale(1.08);
-    }
-    .logo h2{
-        font-size:20px;
-    }
-    body{
-        background-color: #FFF8E7;
-        text-align: center;
     }
     footer{
         background-color: #FF9933;
@@ -179,110 +188,34 @@
     .fa-youtube:hover{
         transform:scale(1.2);
     }
-    .hero{
-        color: black
-    }
-    #samaan{
-        background-color: orange;
-        border-radius: 150px;
-        border-color: red;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-    }
-    #samaan:hover{
-        transform: scale(1.25);
-        transition: 1s;
-    }
-    #phone{
-        background-color: orange;
-        border-radius: 150px;
-        border-color: red;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-    }
-    #phone:hover{
-        transform: scale(1.25);
-        transition: 1s;
-    }
-    .cards{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-    .card{
-        opacity:0;
-        transform: translateY(50px);
-        transition:1s;
-        width: 250px;
-        padding: 20px;
-        background: #FF9933;
-        border-radius: 30px;
-        box-shadow: 0 5px 15px rgba(0,0,0,1);
-    }
-    .cards:hover{
-        transform: scale(1.05);
-        transition: 1.5s;
-    }
-    .card.show{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-    #dudh{
-        background-color: #D4AF37;
-        color: white;
-    }
-    #pussy{
-        text-align: left;
-        color: #4A2C2A;
-    }
-    #blouse{
-        background:orange;
-        border-color: red;
-        border-radius: 150px;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0,0,0.4);
-    }
-
-    #blouse:hover{
-         transform: scale(1.25);
-        transition: 1s;
-    }
-    #made{
-        background:orange;
-        border-color: red;
-        border-radius: 150px;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0,0,0.4);
-    }
-    #made:hover{
-         transform: scale(1.25);
-        transition: 1s;
-    }
-    #customer{
-        background-color: #D4AF37;
-        color: white;
-    }
-    #Vision{
-        background-color: #D4AF37;
-        color: white;
-    }
-    #om{
-        color: #4A2C2A;
-    }
     html{
         scroll-behavior: smooth;
     }
-</style>
-</head>
-<body>
-    <nav>
+    #dibbi{
+        width: 250px;
+        height:250px;
+    }
+    button{
+        border-radius: 200px;
+        background-color: red;
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+    button:hover{
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
             <div class="logo">
-                <img id="krishna" src="krishna.jfif" alt="laddu">
+                <img id="Krishna" src="krishna.jfif" alt="laddu">
                 <h2>Krishna Vastra</h2>
             </div>
             <ul class="nav-link">
-                <li><a href="About.html">About us</a></li>
+                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="products.html">Our Products</a></li>
                 <li><a href="vision.html">Our Vision</a></li>
                 <li><a href="contact.html">Contact us</a></li>
@@ -291,63 +224,14 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-    <section class="krish">
-        <div class="hero">
-            <h1 id="om">Handmade Krishna Dresses and Crochets</h1>
-            <h3 id="om">Handmade with love. Creating beautiful products while working toward empowering women through meaningful employment.</h3>
-        </div>
-        <div class="buttonsa">
-            <a href="products.html">
-                <button id="samaan">Explore Products</button>
-            </a>
-            <a href="contact.html">
-                <button id="phone">Contact Us</button>
-            </a>
-        </div>
-    </section>
-    <hr>
-    <h1 id="om">Featured Categories</h1>
-    <section class="churan">
-        <div class="cards">
-            <div class="card">
-                <h2>🦚Krishna dresses</h2>
-                <h3>Fits to all size</h3>
-                <h3>All ornaments free</h3>
-            </div>
-            <div class="card">
-                <h2>🧶Crochets Products</h2>
-                <h3>All handmade</h3>
-                <h3>Everything made of yarn</h3>
-            </div>
-            <div class="card">
-                <h2>✂️Sewing Creation</h2>
-                <h3>desi to modern</h3>
-                <h3>Unisexual</h3>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <br>
-    <h1 id="dudh">Why choose us?</h1>
-    <h3 id="pussy">✔Handmade Quality</h3>
-    <h3 id="pussy">✔Affordable Pricing</h3>
-    <h3 id="pussy">✔Custom Orders</h3>
-    <h3 id="pussy">✔Made with Care</h3>
-    <hr>
-    <h1 id="Vision">Our Vision</h1>
-    <h3 id="om">We dream of creating opportunities for women to earn through their skills and craftsmanship.</h3>
-    <a href="about.html">
-        <button id="blouse">Read our Story</button>
-    </a>
-    <hr>
-    <br>
-    <h1 id="customer">--Customer CTA--</h1>
-    <h3 id="om">Need a custom Design?</h3>
-    <a href="https://wa.me/918210706200?text=%20Hi,%20i%20want%20to%20order%20a%20custom%20product." target="_blank" rel="noopener noreferrer">
-    <button id="made">Click here</button>
+        <img id="dibbi" src="box1.jpg" alt="dibba">
+        <h1> Currently Restocking.</h1>
+<h3>Our recent collection has sold out.
+New handmade creations will be available soon</h3>
+<a href="https://wa.me/918210706200?text=%Hi,%20Notify%20me%20as%20as%20you%20restock." target="_blank" rel="noopener noreferrer">
+<button>Notify Me</button>
 </a>
-    <hr>
-    <footer>
+         <footer>
         <h2>*Quick links*</h2>
         <a href="About.html">About us</a>
         <a href="products.html">Our Products</a>
